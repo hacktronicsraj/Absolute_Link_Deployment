@@ -1,0 +1,518 @@
+// alert("hi")
+//single line comment
+/*
+everything that I write in this region is getting commented
+
+*/
+// const p = document.querySelector(".paras");
+//variables and datatypes
+// var , let , const
+
+// var name1 = "raja";
+// let name2 = "Raja";
+// const name3 = "Raja";
+
+//difference between var let and const
+
+/*
+var -  can be redeclared and reassigned,
+you can declare a variable and assign the value later 
+
+undefined gets assigned to the variable by default.
+
+let - they cannot be redeclared in the same scope but value can be reassigned in the same scope, also has the same functionality that the varible can just be declared and "undefined" is the default value of it
+
+const - they cannot be just declared they need to be initialized also while declaring , they cannot be reassigned also 
+the value remains same throughout , it cannot be redeclared in the same scope.
+
+
+
+
+*/
+
+// let name ;
+// let name ;         //cannot redeclare
+
+// let name = "Raja";
+// name = "shekar";
+
+// console.log(name);     //value can be reassigned
+
+
+// const name = "Raja";
+
+// name = "Shekar";       //value cannot be reassigned because it is a constant
+// console.log(name);
+
+// const name = "Raja";
+// const name = "shekar";  //cant be redeclared in the same scope
+
+
+//functions
+// console.log(3+5) //works
+
+//functions improves reusability of code
+
+//creating functions
+// let fun = function name() {
+//     console.log("Aviral");
+
+// };
+
+// console.log(fun());          // calling a function with variable.
+
+// fun();                // we can call the function with this also
+
+// we can store functions in variable
+// nameOfFunctuin();     //calling a function
+
+
+// let fun = function  {         //function with out name is a anonymous function , we can run it with a variable
+//     console.log("Aviral");
+
+// };
+
+
+// let fun = () => {           //this is called arrow syntax ot arrow functions
+//     console.log("Aviral")    // we can use this to say that it is a function. () => {
+
+// }
+
+// fun();
+
+// let fun = (name) => {
+//   console.log("Hello " + name);         // we added a parameter here
+
+// };
+
+// fun("Aviral");
+
+
+//conditional statements
+// let age = 11;
+
+// if(age >= 18){
+//       console.log("Eligible to vote")
+// }
+
+// else {
+
+//     console.log("Not eligible to vote")
+// }
+
+
+//loops
+
+// for(let i = 0;i<10; i++){        //recursion goes here
+// //logic goes here
+// console.log("Eligible to vote");        //prints 10 times 0-9
+// }
+
+
+
+//
+
+//dom model
+
+// const p =document.querySelector(".para");
+
+// // console.log(p.innerText); //print inner text
+// p.innerText = "Raja"; //changing contents
+
+// const fun = () => {
+//     const p = document.querySelector(".paras");   changing with class
+//     console.log(p);
+//     p.innerText = "Aviral";
+// };
+
+// const fun = () => {
+//         const p = document.querySelector("p");     //changing tag
+//         console.log(p);
+//         p.innerText = "Aviral";
+//     }; // first tag is changed here if there are two same tags
+
+// const fun = () => {
+//         const p = document.querySelector("#p");      //manupulating using id
+//         console.log(p);
+//         p.innerText = "Aviral";
+//     };
+
+
+//query Selector all
+
+//returns all elements that matches the selector
+
+// const fun = () => {
+//         const p = document.querySelectorAll("#p");
+//         console.log(p[0]);
+//         p[0].innerText = "Aviral";  //using query selector all , it gives a nodelost(array) which gives all the elements inside multiple tags , if we want to change it we have to make it print the elements in the array generated
+
+//     };
+
+// console.log(document.getElementById("p"))
+// console.log(document.getElementsByClassName("para"))
+// console.log(document.getElementsByTagName("p"))
+
+//dom traversal for parent
+
+// console.log(document.querySelector('#p').parentElement); //to get parent of the element 
+
+// another approach
+// const p = document.querySelector("#p");
+// console.log(p.parentElement.parentElement.parentElement);  //finding parent of the parent element
+
+// console.log(document);
+
+
+//traversing child
+
+
+// const p = document.querySelector("#p");   //traversing child
+
+// console.log(p.childNodes);
+// const fun = () => {
+// const p = document.querySelector(".paras");
+
+// console.log(p);
+
+// // console.log(p.length);  //find length 
+
+// for(let i = 0; i < p.length; i++) {
+//     p[i].innerText = p[i].innerText + " " + (i + 1);
+
+// }
+
+// };
+
+// const changeBG = () => { // changing backgound
+//     //this will select p with class of paras
+    
+//     const p = document.querySelector(".paras");
+//      // p.style.backgroundColor = "red";  // changing bg color
+
+//     p.classList.add("aviral");
+
+
+
+
+// };
+
+//kabab case , replacing space in between two words with hifen(-)
+//camel case , in between two words the first word in small and the continuation word will be upper case without any space in netween 
+
+
+//attributes
+
+// const addAttribite = () => {
+
+//     const p = document.querySelector(".paras");
+
+//     p.setAttribute("color", "purple");
+//     p.removeAttribute("color");
+    
+
+// };
+
+// addAttribite();
+
+// //check class
+
+// const checkClass
+
+//attributes here
+//add attribute
+//remove attribute
+//you can also styles using attribute
+
+//june 19
+
+//do not use var , only use let and const
+//make array in js.
+
+// const raja = ["raja","raj","kumar","ramesh","suresh"];
+// console.log(raja); // prints the value of array in console
+ 
+// console.log(raja.length);// gets the length of the array
+
+//methods on array
+
+// raja.push("aridham"); //adds element at the last of the array
+// console.log(raja);
+
+// raja.pop(); //removes the last element of the array and returns the array
+
+// console.log(raja);
+
+// raja.unshift("suresh"); //it will insert new element at the start of the array
+
+// console.log(raja);
+
+// console.log(typeof raja); // it will return object
+
+//primitive data types in js
+// 1. String
+// 2. Number
+// 3. Bigint
+// 4. Boolean           //primitive means at the atomic level
+// 5. Undefined
+// 6. Null
+// 7. Symbol
+// 8. Object
+
+//methods exclusive to arrays **vvip
+
+//extract 2nd and 3rd element
+
+//use one time shift and one time pop
+//this will modify the original array so if we want the original one we wont be able to get it unless it is stored so 
+
+//another method
+
+//using slice()
+
+//this will create a new array for the required elements withour disturbing the original array.
+
+// const slicedArray = raja.slice(1,3) //here the ending index we have to given +1 to the element we want so if you want 2,3 index elements then  you have to give slice(2,4).
+// console.log(slicedArray); // this does not operate on original array , it makes a new array
+
+//splice - add a element at specific location of the array
+
+// const splicedArray = raja.splice(0,2);
+// console.log("splicedArray" , splicedArray); // removing using splice
+// console.log("raja",raja);
+
+// const splicedArray = raja.splice(0,2,"suj"); //splicing and adding suj at the start
+// console.log("splicedArray" , splicedArray); 
+// console.log("raja",raja);
+
+//adding at a specific location using splice
+
+// const splicedArray = raja.splice(2,0,"suj"); //adding at a specific location. here 2 means at at location 2 and 0 means dont delete any elements at that location
+// console.log("splicedArray" , splicedArray); //we have written the string just for removing confusion of which is which
+// console.log("raja",raja);
+
+//HOF , higher order function
+// const fun = (parameter) => { // here fun is hof of helloworld
+//     console.log(typeof parameter)
+// console.log("callback");
+// };
+// //callback function for hof( here hello world is a callback function for fun)
+// const hello = () => {
+//     console.log("Hello World"); //passing a function as an argument to another function
+
+// };
+// fun(hello); //it will print callback in console , if there is no parameter named aviral in the fun
+
+// js allows you to pass one function as an  argument to another function.
+
+//here helloworld is callback function
+
+//the function that is passed as an argument to another function is a callback function
+
+//hof - higher order function - functions that accepts another functions as a parameter are called as higher order functions.
+
+// const HOF = (cb) => {
+//     console.log("hof");
+//     cb(); //cb means callback.
+
+// };
+
+// const callback = () => {
+//     console.log("callback");
+// };
+
+// HOF(callback);
+// HOF(() => {
+//     console.log("callback");
+// });
+
+
+//revise higher order functions
+
+//forEach - quivalent for for loop
+
+// const val = raja.forEach((name,i) => { //if you want to do a operation for each element then we use forEach
+// //    console.log(name ,i);
+// });
+// console.log(val);
+
+//map , it is bettwr than forEach as it returns for all the elements
+// const val2 = raja.map((name,i) => { //if you want to do a operation for each element then we use forEach
+//     // console.log(name ,i);
+// return name + " " + i; //for printing the array with index beside them , this creates a new array
+// });
+//  console.log(val2);
+
+ //duplicating array using slice
+// const copy = raja.slice(); // if you dont pass any arguments inside slice it will create a copy of that array
+// copy.push("Rahul");
+// console.log(copy);
+// console.log(raja);
+ 
+//sum all positive elements
+// const arr = [1,-1,0,4,-6,12,-3];
+// let sum=0;
+
+// arr.forEach((a)=>{
+
+//     if(a>=0)
+//     {
+//         sum=sum+a;
+//     }
+// })
+// console.log(sum)
+
+//using filter for solving that problem
+
+// const filteredArr = arr.filter((val) => {
+//     return val > 0 // only returns val > 0 elements to the filteredArr
+
+// });
+// let sum = 0
+// filteredArr.forEach((ele) => {
+//     sum =+ ele;
+// });
+
+// console.log(sum);
+ 
+
+//events
+
+//events on paragraph which is already set at the begging of the file
+
+// p.addEventListener("click",() => { //perform action when clicked.
+//     console.log("I was clicked"); //shows this once clicked on console
+// });
+//for mouse
+// click	onclick   	When mouse click on an element
+// mouseover	onmouseover  	When the cursor of the mouse comes over the element
+// mouseout	onmouseout	 When the cursor of the mouse leaves an element
+// mousedown	onmousedown   	When the mouse button is pressed over the element
+// mouseup	onmouseup	 When the mouse button is released over the element
+// mousemove	onmousemove	 When the mouse movement takes place.
+
+
+//events for keyboard
+// Keydown & Keyup	onkeydown & onkeyup	When the user press and then release the key
+
+// const input = document.querySelector("[type='text']");
+
+// input.addEventListener("keydown", () => {
+//     console.log("keydown");
+// });
+
+
+// input.addEventListener("keyup", (e) => {
+//     const keyPressed = e.key;
+// if(keyPressed >= 'a' && keyPressed <= "z")
+//     //if you want to restrict the input for the function to run
+// e.target.value = "not allowed";
+//     // console.log("conditionis true");
+// });
+
+//https://www.javatpoint.com/javascript-events
+
+//inheritence
+
+// class Person {
+//     constructor (name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//     displayThis(){
+//         console.log(this);
+//     }
+// greet() {
+//     console.log("hello  " + this.name);
+
+// }
+// }
+
+// const person = new Person("Raja", 24);
+// person.greet();
+// person.displayThis();
+
+
+// class Animal {
+// constructor (name){
+//     this.name = name;
+
+// }
+// eat(){
+//     console.log(this.name + "is eating");
+// }
+
+// }
+// const animal = new Animal ("Deer");
+
+// class Dog extends Animal{
+//     bark(){
+//         console.log(this.name + "   is barking..");
+//     }
+
+
+// }
+
+// const max = new Dog("Max");
+// max.bark();
+
+//polymorphism
+
+// class Shape {
+//     area(){
+//         console.log("calculating area of Shape")
+//     }
+
+// }
+
+// class Circle extends Shape{
+//     area(){
+//         console.log("calculating area of Circle")
+//     }
+
+// }
+
+// class Rectangle extends Shape{
+//     area(){
+//         console.log("calculating area of Rectangle")
+//     }
+// }
+
+// const circle = new Circle();
+// const rectangle = new Rectangle();
+
+// circle.area();
+// rectangle.area();
+ 
+
+//getters and setters
+
+// class Person {
+//     constructor(name){
+//         this._name = name;
+//     }
+//     get name(){
+//         return this._name;
+
+//     }
+//     set name(newName){
+//         if (newName.startsWith("a"))
+//         this._name = newName;
+
+//     }
+// }
+
+// const person = new Person("aviral")
+// person.name = "Rahul";
+
+// console.log(person.name);
+
+//we use getter and setter because we want to add restriction
+
+
+//MERN intro
+//mongo db has documents and collections
+//express - backend framework
+//react - frontend
+
+

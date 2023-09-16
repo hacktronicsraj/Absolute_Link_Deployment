@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.gradient_background {
+  background: linear-gradient(to right, rgb(248, 113, 113), rgb(209, 213, 219), rgb(59, 130, 246));
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  /* background: #002D62; */
+  /* background-image: url("https: //helpdeskgeek.com/wp-content/pictures/2019/04/share-files.png"); */
+  /* background-image:
+      url("https: //helpdeskgeek.com/wp-content/pictures/2019/04/share-files.png");
+    background-size: "cover"; */
+    
+  
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+
+.img {
+  width: 0%;
+}
+
+.wrapper {
+  width: 650px;
+  height: 400px;
+  margin: auto;
+  /* background: #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+TypeAnimation {
+  font-size: 80px;
+  font-weight: 600;
+  color: #445A6F;
+  margin: 40px 0;
+}
+
+input {
+  margin: 80px 0;
+  width: 300px;
+  padding: 8px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #445A6F;
+  border: 1px solid #445A6F;
+  color: #fff;
+  font-size: 20px;
+  margin: 30px 0;
+}
